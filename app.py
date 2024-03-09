@@ -19,20 +19,20 @@ def run_commands(commands):
 
 
 # @title Download pretrained models 下载预训练模型
-!mkdir -p /content/GPT-SoVITS/GPT_SoVITS/pretrained_models
-!mkdir -p /content/GPT-SoVITS/tools/damo_asr/models
-!mkdir -p /content/GPT-SoVITS/tools/uvr5
-%cd /content/GPT-SoVITS/GPT_SoVITS/pretrained_models
-!git clone https://huggingface.co/lj1995/GPT-SoVITS
-%cd /content/GPT-SoVITS/tools/damo_asr/models
-!git clone https://www.modelscope.cn/damo/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch.git
-!git clone https://www.modelscope.cn/damo/speech_fsmn_vad_zh-cn-16k-common-pytorch.git
-!git clone https://www.modelscope.cn/damo/punc_ct-transformer_zh-cn-common-vocab272727-pytorch.git
+#!mkdir -p /content/GPT-SoVITS/GPT_SoVITS/pretrained_models
+#!mkdir -p /content/GPT-SoVITS/tools/damo_asr/models
+#!mkdir -p /content/GPT-SoVITS/tools/uvr5
+#%cd /content/GPT-SoVITS/GPT_SoVITS/pretrained_models
+#!git clone https://huggingface.co/lj1995/GPT-SoVITS
+#%cd /content/GPT-SoVITS/tools/damo_asr/models
+#!git clone https://www.modelscope.cn/damo/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch.git
+#!git clone https://www.modelscope.cn/damo/speech_fsmn_vad_zh-cn-16k-common-pytorch.git
+#!git clone https://www.modelscope.cn/damo/punc_ct-transformer_zh-cn-common-vocab272727-pytorch.git
 # @title UVR5 pretrains 安装uvr5模型
-%cd /content/GPT-SoVITS/tools/uvr5
-!git clone https://huggingface.co/Delik/uvr5_weights
-!git config core.sparseCheckout true
-!mv /content/GPT-SoVITS/GPT_SoVITS/pretrained_models/GPT-SoVITS/* /content/GPT-SoVITS/GPT_SoVITS/pretrained_models/
+#%cd /content/GPT-SoVITS/tools/uvr5
+#!git clone https://huggingface.co/Delik/uvr5_weights
+#!git config core.sparseCheckout true
+#!mv /content/GPT-SoVITS/GPT_SoVITS/pretrained_models/GPT-SoVITS/* /content/GPT-SoVITS/GPT_SoVITS/pretrained_models/
      
 
 def start():
