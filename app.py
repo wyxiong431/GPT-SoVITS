@@ -39,18 +39,18 @@ def start():
 
     commands = [
 
-        f'echo 1. 正在下载前置模型... && !mkdir -p /content/GPT-SoVITS/GPT_SoVITS/pretrained_models',
+        f'echo 1. 正在下载前置模型... && mkdir -p /content/GPT-SoVITS/GPT_SoVITS/pretrained_models',
 
-        f'echo 2. 正在下载推理模型... && !mkdir -p /content/GPT-SoVITS/tools/damo_asr/models',
+        f'echo 2. 正在下载推理模型... && mkdir -p /content/GPT-SoVITS/tools/damo_asr/models',
 
-        f'echo 3. 正在下载 nltk 数据包... && !mkdir -p /content/GPT-SoVITS/tools/uvr5',
+        f'echo 3. 正在下载 nltk 数据包... && mkdir -p /content/GPT-SoVITS/tools/uvr5',
 
-        f'echo 4. 正在解压前置模型 && %cd /content/GPT-SoVITS/GPT_SoVITS/pretrained_models',
+        f'echo 4. 正在解压前置模型 && cd /content/GPT-SoVITS/GPT_SoVITS/pretrained_models',
 
-        f'echo 5. 正在解压推理模型 && !git clone https://huggingface.co/lj1995/GPT-SoVITS',
+        f'echo 5. 正在解压推理模型 && git clone https://huggingface.co/lj1995/GPT-SoVITS',
 
-        f'echo 6. 正在解压 nltk 数据包 && %cd /content/GPT-SoVITS/tools/damo_asr/models',
-        f'echo 7. 正在解压 nltk1 数据包 && !git clone https://www.modelscope.cn/damo/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch.git',
+        f'echo 6. 正在解压 nltk 数据包 && cd /content/GPT-SoVITS/tools/damo_asr/models',
+        f'echo 7. 正在解压 nltk1 数据包 && git clone https://www.modelscope.cn/damo/speech_paraformer-large_asr_nat-zh-cn-16k-common-vocab8404-pytorch.git',
 
         f'python -u GPT_SoVITS/inference_webui.py'
 
